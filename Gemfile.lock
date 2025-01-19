@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/DevStarSJ/omniauth-kakao
+  revision: 07b807f5db74899bea6c4f935d2e1248645b9667
+  specs:
+    omniauth-kakao (0.2.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.7.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -201,23 +209,21 @@ GEM
       rack (>= 1.2, < 4)
       snaky_hash (~> 2.0)
       version_gem (~> 1.1)
-    omniauth (2.1.2)
+    omniauth (1.9.2)
       hashie (>= 3.4.6)
-      rack (>= 2.2.3)
-      rack-protection
-    omniauth-google-oauth2 (1.2.0)
-      jwt (>= 2.9)
-      oauth2 (~> 2.0)
-      omniauth (~> 2.0)
-      omniauth-oauth2 (~> 1.8)
+      rack (>= 1.6.2, < 3)
+    omniauth-google-oauth2 (0.8.0)
+      jwt (>= 2.0)
+      omniauth (>= 1.1.1)
+      omniauth-oauth2 (>= 1.6)
     omniauth-naver (0.1.0)
       omniauth-oauth2 (~> 1.2)
-    omniauth-oauth2 (1.8.0)
+    omniauth-oauth2 (1.7.3)
       oauth2 (>= 1.4, < 3)
-      omniauth (~> 2.0)
-    omniauth-rails_csrf_protection (1.0.2)
+      omniauth (>= 1.9, < 3)
+    omniauth-rails_csrf_protection (0.1.2)
       actionpack (>= 4.2)
-      omniauth (~> 2.0)
+      omniauth (>= 1.3.1)
     orm_adapter (0.5.0)
     ostruct (0.6.1)
     parallel (1.26.3)
@@ -237,18 +243,14 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.1.8)
-    rack-protection (4.1.1)
-      base64 (>= 0.1.0)
-      logger (>= 1.6.0)
-      rack (>= 3.0.0, < 4)
-    rack-session (2.1.0)
-      base64 (>= 0.1.0)
-      rack (>= 3.0.0)
+    rack (2.2.10)
+    rack-session (1.0.2)
+      rack (< 3)
     rack-test (2.2.0)
       rack (>= 1.3)
-    rackup (2.2.1)
-      rack (>= 3)
+    rackup (1.0.1)
+      rack (< 3)
+      webrick
     rails (8.0.1)
       actioncable (= 8.0.1)
       actionmailbox (= 8.0.1)
@@ -380,6 +382,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webrick (1.9.1)
     websocket (1.2.11)
     websocket-driver (0.7.7)
       base64
@@ -405,8 +408,9 @@ DEPENDENCIES
   jbuilder
   kamal
   omniauth-google-oauth2
+  omniauth-kakao!
   omniauth-naver
-  omniauth-rails_csrf_protection (~> 1.0)
+  omniauth-rails_csrf_protection
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)

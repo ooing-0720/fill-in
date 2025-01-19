@@ -65,10 +65,10 @@ end
 gem "devise"
 
 # OAuth 2.0
-gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "omniauth-rails_csrf_protection"
 gem "omniauth-google-oauth2"
 gem "omniauth-naver"
-# gem "omniauth-kakao", git: "https://github.com/DevStarSJ/omniauth-kakao"
+gem "omniauth-kakao", git: "https://github.com/DevStarSJ/omniauth-kakao"
 
 # Hide Api key
 gem "figaro"

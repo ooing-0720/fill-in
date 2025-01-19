@@ -2,11 +2,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   skip_forgery_protection
 
   def self.provides_callback_for(provider)
-    Rails.logger.debug "aaaaa"
     define_method(provider) do
-      Rails.logger.debug("naver??")
       auth_data = request.env["omniauth.auth"]
-      Rails.logger.debug "OmniAuth Auth Hash: #{auth_data.inspect}"
       @user = User.find_for_oauth(auth_data, current_user)
 
 

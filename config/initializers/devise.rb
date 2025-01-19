@@ -273,12 +273,8 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"]
-  config.omniauth :naver, ENV["NAVER_CLIENT_ID"], ENV["NAVER_CLIENT_SECRET"],
-    client_options: {
-      site: "https://nid.naver.com",
-      authorize_url: "/oauth2.0/authorize",
-      token_url: "/oauth2.0/token"
-    }
+  config.omniauth :naver, ENV["NAVER_CLIENT_ID"], ENV["NAVER_CLIENT_SECRET"]
+  config.omniauth :kakao, ENV["KAKAO_CLIENT_ID"], redirect_path: "/users/auth/kakao/callback", path_prefix: "/users/auth"
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
