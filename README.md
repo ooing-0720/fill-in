@@ -32,6 +32,15 @@ $ bundle install
 ```
 $ rails db:migrate
 ```
+  
+
+# API 출력
+Prefix: 기능 설명  
+Verb: HTTP Method  
+URI Pattern: HTTP URI
+```
+$ rails routes
+```
 
 # 미구현
 현재 백엔드 구현되어있지 않으나, 테스트 등에 필요한 기능 처리 설명
