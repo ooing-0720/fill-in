@@ -5,6 +5,16 @@ ruby    3.3.5
 DB      SQLite3 # 임의(Rails default)
 ```
 
+## 설치
+### ruby 설치
+환경에 따라 설치 방법이 다르므로 자신의 환경에 맞춰 위의 버전으로 설치
+
+### Rails 설치
+ruby가 설치되어있는 상태에서 해당 명령어 실행
+```
+$ gem install rails --8.0.1
+```
+
 # 실행
 ## localhost 서버 기동
 ```
