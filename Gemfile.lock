@@ -216,7 +216,7 @@ GEM
       jwt (>= 2.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.6)
-    omniauth-naver (0.1.0)
+    omniauth-naver (0.2.0)
       omniauth-oauth2 (~> 1.2)
     omniauth-oauth2 (1.7.3)
       oauth2 (>= 1.4, < 3)
